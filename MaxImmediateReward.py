@@ -2,6 +2,7 @@
 
 import numpy as np
 
+# Read in data rates
 BS0 = open('9steps_datarates_BS0.txt')
 
 linecount = 0
