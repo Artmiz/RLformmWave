@@ -4,6 +4,7 @@
 
 import numpy as np
 
+# Read in data rate files
 BS0 = open('9steps_datarates_BS0.txt')
 
 linecount = 0
@@ -54,12 +55,10 @@ BS2.close()
 BS3.close()
 BS4.close()
 
-
+#DP variables 
 total_steps = len(datarates_list)
 number_BS = len(datarates_list[0])
-
 penalty = 2.0 # switching cost constant
-
 #The best solution (associated BSs) upto step m
 base_stations = np.zeros((total_steps, total_steps), np.int8)
 #The best reward upto step m
