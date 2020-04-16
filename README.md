@@ -1,2 +1,2 @@
 # RLformmWave
-Programms developed for MSc thesis 
+Programms developed for MASc thesis 
