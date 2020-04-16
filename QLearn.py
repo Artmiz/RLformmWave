@@ -1,3 +1,4 @@
+# This file has the Qlearning class definitions
 import numpy as np
 
 class QLearn():
