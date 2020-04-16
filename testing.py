@@ -1,3 +1,4 @@
+# Test the training saved in the QL and DQL files and compare them to DynamicProgramming
 import numpy as np
 import os.path
 
@@ -84,16 +85,3 @@ while True:
     break
   obs = obs_
 print("Total reward=", total_reward)
-
-#print Q matrix
-"""
-for state in range(gnet.n_size*gnet.n_size*gnet.n_BS):
-  prev_BS = state % gnet.n_BS
-  location = state // gnet.n_BS
-  y = location % gnet.n_size
-  x = location // gnet.n_size
-  obs = [x, y, prev_BS]
-  q_out = dqn.policy_net(torch.tensor([obs]).float())
-  print(obs, q_out)
-"""
-
