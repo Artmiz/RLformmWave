@@ -1,3 +1,4 @@
+# RUN THIS to train using DQN
 import numpy as np
 import os.path
 
