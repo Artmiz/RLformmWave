@@ -1,4 +1,4 @@
-#defind the gridnet enviroment
+#defind the gridnet enviroment (ANY changes to the network/network characteristics need to be made here)
 
 import numpy as np
 
@@ -89,33 +89,3 @@ class GridNet:
               next_value = Q_matrix[nx, ny, nz+1, :].max()
             Q_matrix[x, y, z, action] = reward + gamma*next_value
     return Q_matrix
-
-#---------main----------------
-#gridnet = GridNet()
-#print(gridnet.complete_bitrates)
-
-"""
-obs = [0, 0, 1]
-while True:
-  action = np.random.randint(gridnet.n_actions)
-  obs_, reward = gridnet.step(obs, action)
-  print(obs, obs_, reward)
-  if obs_ == None:
-    break
-  obs = obs_
-"""
-
-#to print the R_matrix
-"""
-for state in range(gridnet.n_size*gridnet.n_size*gridnet.n_BS):
-  prev_BS = state % gridnet.n_BS
-  location = state // gridnet.n_BS
-  y = location % gridnet.n_size
-  x = location // gridnet.n_size
-  obs = [x, y, prev_BS]
-  state_r = []
-  for action in range(gridnet.n_actions):
-    obs_, reward = gridnet.step(obs, action)
-    state_r.append(reward)
-  print(obs, state_r)
-"""
