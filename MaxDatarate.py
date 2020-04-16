@@ -78,7 +78,7 @@ for step in range (total_steps):
     
 
 file_name = 'MaxDatarateResults_%ssteps_penalty%s.txt' %(total_steps, penalty)
-Result = open(file_name,'a' )  # This file has the results of loss  during training stored
+Result = open(file_name,'a' )  # This file has the results choosing highest data rate BS at every user step
 Result.write('BS list: ' + repr(BS_list) + '\n')
 Result.write('reward: ' + repr(total_reward) + '\n')
 
