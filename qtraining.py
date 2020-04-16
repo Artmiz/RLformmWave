@@ -1,3 +1,4 @@
+# RUN THIS to train using QL
 import numpy as np
 import os.path
 
