@@ -1,4 +1,4 @@
-# This programming choose a random BS at every given user step to service the user
+# This program will choose a random BS at every given user step to service the user
 
 import numpy as np
 import random
@@ -75,7 +75,7 @@ for step in range (total_steps):
         total_reward += datarates_list[step][BS] - switch_cost
 
 file_name = 'RandomBSselectionResults_%ssteps_penalty%s.txt' %(total_steps, penalty)
-Result = open(file_name,'a' )  # This file has the results of loss  during training stored
+Result = open(file_name,'a' )  # This file has the results of random BS selection and the total reward for those BSs
 Result.write('BS list: ' + repr(BS_list) + '\n')
 Result.write('reward: ' + repr(total_reward) + '\n')
 
