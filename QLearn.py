@@ -1,4 +1,4 @@
-# This file has the Qlearning class definitions
+# This file has the Qlearning class definitions and can return Qlearning loss
 import numpy as np
 
 class QLearn():
