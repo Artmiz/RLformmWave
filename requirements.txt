@@ -27,7 +27,7 @@ mock==3.0.5
 networkx==2.2
 numpy==1.16.3
 opencv-python==4.1.0.25
-Pillow==6.0.0
+Pillow==9.0.0
 progressbar2==3.39.3
 protobuf==3.7.1
 pyparsing==2.4.0
